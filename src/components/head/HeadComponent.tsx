@@ -29,9 +29,12 @@ const HeadComponent = () => {
             Contact
           </li>
         </ul>
-        <div className="xl:hidden lg:hidden md:hidden sm:block xs:block ">
+        <button
+          onClick={() => setIsActive(!isActive)}
+          className="xl:hidden lg:hidden md:hidden sm:block xs:block "
+        >
           <RxHamburgerMenu color="white" size={30} />
-        </div>
+        </button>
       </div>
       <aside
         id="default-sidebar"
