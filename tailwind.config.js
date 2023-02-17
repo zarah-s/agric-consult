@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultColors = require("tailwindcss/colors");
 module.exports = {
   content: [
     // Or if using `src` directory:
@@ -6,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    backgroundImage: {
+      footer: "url('/images/footer.png')",
+    },
+    colors: {
+      ...defaultColors,
+      "primary-green": "#1A7E17",
+      "dark-green": "#19653E",
+      "transparent-green": "#1DA9194A",
+    },
     screens: {
       xs: "320px",
       sm: "576px",
